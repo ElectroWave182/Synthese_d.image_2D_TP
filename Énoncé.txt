@@ -1,0 +1,105 @@
+Bonjour à toutes et tous,
+
+Bienvenue à Gamagora,
+
+J'aurais le bonheur de participer avec vous aux cours de synthèse
+d'image (en tant qu'enseignant). Ces cours commencent demain matin, 9h
+et se feront en distancielle toute l'année via la plateforme de
+l'université https://visio.univ-lyon2.fr/ pour la visio / forum. Nous
+pourrons coupler cela à d'autres outils (github, discord, ...) en
+fonction du besoin.
+
+Je ne pourrai pas être présent sur la vidéo conférence demain matin
+(ou j'arriverais tard) suite à un empêchement de dernière minute.
+
+Afin de ne pas perdre trop de temps sur les prochaines séances, je
+vous demande d'utiliser ce temps "en autonomie" pour :
+
+- Mettre en place un environnement de développement qui fonctionne
+pour vous. Prenez un langage de programmation et des outils avec
+lesquels vous êtes à l'aise, qui vous permettront d'implémenter
+rapidement les algorithmes vus en cours. Il n'y a pas de langage outil
+imposé, alors prenez quelque chose qui fonctionne pour vous. Soyez
+conscient que nous aurons besoin de performance (ou alors vous
+attendrez plus longtemps).
+- Remettez vous doucement dans le bain de la programmation, retrouvez
+vos repères.
+
+Ce cours n'est pas un cours de programmation, ainsi je m'attend à ce
+que vous soyez à l'aise avec vos outils (gestion de version, test,
+compilation, debug, performance, ...). Cependant certaines parties du
+cours seront plus "appliquées" afin de discuter les problématiques
+spécifiques à l'image de synthèse.
+
+Profitez ainsi de ce temps pour vous remettre en confiance (mais
+rassurez-vous, on attaquera doucement). N'hésitez pas à discuter entre
+vous des langages, outils, techniques, ...
+
+Je vous demande que pour notre séance de jeudi, vous soyez donc
+capable d'écrire et d'exécuter du code, de réaliser des tests, de
+debugger, de profiler.
+
+Maintenant, plus particulièrement, nous allons créer des images, donc
+notre première tâche sera de pouvoir écrire une image (e.g. choisir la
+couleur des pixels) et afficher celle-ci ou la sauvegarder sur le
+disque.
+
+Ainsi, je vous demande d'avoir à disposition de quoi créer une image
+(RGB(A?), 8bit par canal par exemple) et sauvegarder celle-ci sur le
+disque et l'afficher.
+
+Par exemple, vous devriez pouvoir implémenter une variation du code
+suivant, qui crée une image en niveau de gris, noire de 800x600 et
+sauvegarde celle-ci sur le disque.
+
+image = create_image(width: 800, height: 600)
+for line in 0..600
+    for column in 0..800
+          image[line, column] = 0
+
+save_image(image, "ma_super_image.png")
+
+(Encore une fois, c'est un exemple, utilisez le langage que vous voulez).
+
+Soit vous avez une librairie qui fait cela et je vous encourage à
+creuser son utilisation, soit vous pouvez par exemple implémenter le
+format https://fr.wikipedia.org/wiki/Portable_pixmap (et sa variante
+en couleur).
+
+Une fois que cette librairie fonctionne, amusez vous à créer des
+images en travaillant pixel par pixel:
+
+- Une image toute blanche
+- Une image toute noire
+- Une image toute rose
+- Une image tout bleue (vous avez compris)
+- Un drapeau d'un pays
+- Un (ou plusieurs) cercles
+- Des carrée
+- Des dégradés
+- Des sapins de noël
+- Une fractal (https://en.wikipedia.org/wiki/Mandelbrot_set)
+
+
+Je précise: je veux du code, pas du pixel art dans photoshop et je ne
+vous demande pas d'utiliser une librairie de haut niveau qui sait
+dessiner des sapins de noel. Vous devrez choisir vous même pixel par
+pixel la couleur.
+
+N'hésitez pas à travailler ensemble pour choisir vos outils et à vous
+poser des défis.
+
+Testez les performances, par exemple, que se passe-t-il si dans le
+code d'exemple que je vous ai donné, on inverse les deux boucles for,
+est-ce que cela change quelque chose ? Pourquoi ? (Encore une fois,
+c'est un exemple, si votre langage ou votre implémentation n'a pas de
+boucle for, faites d'autres tentatives).
+
+Je vous souhaite une bonne matinée, et on se voit jeudi matin pour
+commencer réellement.
+
+PS1: si vous voulez me partager vos œuvres et si vous avez des
+questions, j'aurais tout de même accès à un peu de 4G à partir de 10h,
+n'hésitez pas.
+PS2: on peut faire une exception au début, je dois être `flyingguibou`
+sur discord
